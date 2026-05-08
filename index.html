@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Tienda de Artículos para el Hogar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <body>
+    <header>
+        <h1>Tienda Hogar</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito">Carrito (<span id="cantidad-carrito">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="productos">
+            <h2>Productos Destacados</h2>
+            <div id="contenedor-productos">
+              <!--Productos se insertan aqui-->
+            </div>
+        </section>
+        
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <div id="contenido-carrito">
+                <p>Tu Carrito se encuntra vacio</p>
+            </div>
+            <div id="total-carrito">Total:$0</div>
+            <button id="finalizar-compra"onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+
+   
+    </main>
+
+    <footer>
+        <p>2026 Tienda Hogar</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="app.js"></script>
 </body>
 </html>
